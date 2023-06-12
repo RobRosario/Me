@@ -25,3 +25,7 @@
     animation-delay: 1s;
     animation-fill-mode: both;
 }
+
+.html {
+    scroll-behavior: smooth;
+}

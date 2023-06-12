@@ -58,11 +58,14 @@ body {
     opacity: 0.9;
 
     text-align: left;
+    text-rendering: geometricPrecision;
     display: flex;
     align-items: center;
 
     width: auto;
     height: 50px;
+    /* transition: opacity 300ms ease; */
+
 }
 
 .content {
