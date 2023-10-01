@@ -31,7 +31,6 @@ body {
     /* background-color: #d064eb10; */
     animation-duration: 2.2s;
     animation-name: flowIn;
-    width: 30%;
 
     box-sizing: border-box;
 
@@ -39,6 +38,41 @@ body {
       margin: auto;
       padding: 10px 0px;
       width: 95%;
+    }
+
+    @media only screen and (min-width: 600px) {
+      margin: auto;
+      padding: 10px 0px;
+
+      width: 40%;
+    }
+
+    .contact-panel {
+      .submit {
+        margin: 1rem 0px 0px 0px;
+        height: 40px;
+        background-color: #658252;
+        border: none;
+        border-radius: 4px;
+      }
+    }
+
+    .resume-panel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 200ms ease, border-radius 200ms ease;
+
+      &:hover {
+        background-color: #658252;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+
+      .download-icon {
+        height: 50px;
+        filter: brightness(0) invert(1);
+      }
     }
   }
 }
@@ -49,7 +83,9 @@ body {
 
 #name {
   /* color: black; */
-  color: #d064eb;
+  /* color: #d064eb;
+   */
+  color: #658252;
 }
 
 .card {
@@ -65,7 +101,7 @@ body {
   background-color: #ffffff05;
   display: flex;
   flex-direction: column;
-  color: #d064eb;
+  color: #658252;
 
   .text-input {
     background-color: #ffffff10;
@@ -78,11 +114,12 @@ body {
     &.description {
       height: 160px;
       min-height: 160px;
+      resize: none;
     }
   }
 
   .input-title {
-    color: #d064eb90;
+    color: #65825290;
   }
 }
 
@@ -99,7 +136,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    height: 20px;
+    height: 50px;
     width: 60px;
     padding: 8px;
 
@@ -107,6 +144,8 @@ body {
     background-color: #ffffff06;
 
     transition: background-color 300ms ease, transform 100ms;
+
+    font-size: 40px;
 
     &:hover {
       background-color: #ffffff15;
