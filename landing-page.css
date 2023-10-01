@@ -1,3 +1,15 @@
+@keyframes flowIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 body {
   background-color: #121212;
   height: 100vh;
@@ -31,24 +43,13 @@ body {
   }
 }
 
-@keyframes flowIn {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
 .bold {
   font-weight: bold;
 }
 
 #name {
   /* color: black; */
+  color: #d064eb;
 }
 
 .card {
@@ -56,26 +57,8 @@ body {
   padding: 1rem;
 
   height: auto;
-
-  border-radius: 12px;
   border: 1px solid #ffffff15;
-
-  transform: translateY(200%);
-  opacity: 0;
-
-  animation-duration: 2.2s;
-  animation-name: flowIn;
-  animation-fill-mode: forwards;
-
-  &.work-history {
-    padding-top: 4px;
-    animation-delay: 0.5s;
-    animation-duration: 2.2s;
-    animation-name: flowIn;
-    animation-fill-mode: forwards;
-
-    background-color: #ffffff08;
-  }
+  background-color: #ffffff05;
 }
 
 .contact-panel {
@@ -103,147 +86,33 @@ body {
   }
 }
 
-.left-panel {
-  background-color: #ffffff05;
-  padding: 40px;
-  height: 500px;
-  width: 400px;
-}
-
-.right-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
 .skills-panel {
   display: grid;
-  gap: 1rem;
+  gap: 4px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  background-color: #ffffff05;
+  grid-template-rows: repeat(2, 1fr);
   height: auto;
+  background-color: transparent;
 
   .skills-card {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 50px;
-    width: 50px;
+    height: 20px;
+    width: 60px;
+    padding: 8px;
 
     border-radius: 8px;
-    padding: 8px;
     background-color: #ffffff06;
 
     transition: background-color 300ms ease, transform 100ms;
-
-    opacity: 0;
-
-    animation-delay: 0.5s;
-    animation-duration: 2.2s;
-    animation-name: flowIn;
-    animation-fill-mode: forwards;
 
     &:hover {
       background-color: #ffffff15;
       box-shadow: 0px 3px 0px 0px rgba(255, 255, 255, 0.1);
 
       transform: translateY(-5px);
-    }
-  }
-}
-
-#scrollbar-line {
-  content: "";
-  background-color: #ffffff03;
-  border-radius: 1px;
-  height: 100vh;
-  width: 3px;
-
-  /* position: absolute;
-  top: 0;
-  left: 35%; */
-}
-
-/* @media (min-width: 1500px) {
-  .left-panel {
-    max-width: 400px;
-  }
-  .right-panel {
-    height: 100%;
-    max-width: 400px;
-  }
-  .skills-panel {
-    /* height: 25%; */
-/* }
-  .skills-card::after {
-    width: 10rem;
-    height: 5rem;
-  }
-} */
-
-/* @media (max-width: 480px) {
-  .body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .left-panel {
-    height: 50vh;
-    width: 80vw;
-  }
-  .right-panel {
-    /* height: 100%; */
-/* height: auto;
-    width: 80vw;
-  }
-  .skills-panel {
-    height: auto;
-    width: 80vw;
-  }
-  .skills-card {
-    width: 5rem;
-    height: 5rem;
-  }
-} */
-
-.body {
-  .scrollable {
-    /* global content styles */
-    .content-container {
-      /* contains base styles for each panel */
-
-      .intro {
-        .resume {
-          .download {
-          }
-          .send {
-          }
-        }
-      }
-
-      .skills {
-        .grid {
-          .grid-item {
-          }
-        }
-      }
-
-      .contact {
-        .name {
-        }
-        .email {
-        }
-        .description {
-        }
-      }
-
-      .work-history {
-      }
-
-      .education {
-      }
     }
   }
 }
