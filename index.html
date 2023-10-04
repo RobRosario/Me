@@ -46,28 +46,31 @@
           <i class="devicon-mongodb-plain-wordmark colored dev-icon"></i>
         </div>
       </div>
-      <div class="card contact-panel">
+      <form class="card contact-panel" id="contact-panel">
         <h3 id="contact-me">Contact Me</h3>
-        <p class="input-title">Name</p>
-        <input type="text" class="text-input name" placeholder="" />
-        <p class="input-title">Email</p>
+        <label class="input-title">Name</label>
+        <input type="text" class="text-input name" id="name" placeholder="" />
+        <label class="input-title">Email</label>
         <input
           type="text"
           class="text-input email"
+          id="email"
           placeholder="example@email.com"
         />
-        <p class="input-title">Description</p>
+        <label class="input-title" for="description">Description</label>
         <textarea
           class="text-input description"
+          id="description"
           placeholder="Let's build something together!"
         ></textarea>
-        <button type="submit" class="submit">Send</button>
-      </div>
+        <button type="submit" class="submit" id="submit">Send</button>
+      </form>
       <a
         href="./Robert_Rosario_-_Software_Developer__Veteran.pdf"
         download="Robert_Rosario_-_Software_Developer__Veteran.pdf"
       >
         <div class="card resume-panel">
+          <div class="label">Get My Resume</div>
           <img
             src="./download.svg"
             aria-label="download"

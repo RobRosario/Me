@@ -1,10 +1,12 @@
-const handleClick = () => {
-  // document.getElementsByClassName("resume-panel").innerHTML = "Button clicked!";
-  alert("hi");
-};
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("contact-panel").addEventListener("submit", (e) => {
+    e.preventDefault();
 
-const myButton = document.getElementsByClassName("resume-panel");
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("description").value;
 
-myButton.onclick = () => {
-  handleClick();
-};
+    const mailtoLink = `mailto:robertleerosario@yahoo.com?subject=Contact from ${name}&body=${message}`;
+    window.location.href = mailtoLink;
+  });
+});
