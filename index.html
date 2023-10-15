@@ -1,84 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A Site About Me 🤘</title>
-    <link rel="stylesheet" href="landing-page.css?v=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+    <title>Vite + React + TS</title>
   </head>
   <body>
-    <div class="content-container">
-      <div class="card">
-        <h1 id="name">Robert Rosario</h1>
-        <p class="bold">Software Developer & Veteran</p>
-        <p>
-          Hi! I've been a full-stack software engineer for 2 years. Let's work
-          together!
-        </p>
-      </div>
-      <div class="card skills-panel">
-        <div class="skills-card">
-          <i class="devicon-react-plain-wordmark colored dev-icon"></i>
-        </div>
-        <div class="skills-card">
-          <i class="devicon-javascript-plain colored dev-icon"></i>
-        </div>
-        <div class="skills-card">
-          <i class="devicon-typescript-plain colored dev-icon"></i>
-        </div>
-        <div class="skills-card">
-          <i class="devicon-html5-plain-wordmark colored dev-icon"></i>
-        </div>
-        <div class="skills-card">
-          <i class="devicon-css3-plain-wordmark colored dev-icon"></i>
-        </div>
-        <div class="skills-card">
-          <i class="devicon-nodejs-plain-wordmark colored dev-icon"></i>
-        </div>
-        <div class="skills-card">
-          <i class="devicon-express-original-wordmark colored dev-icon"></i>
-        </div>
-        <div class="skills-card">
-          <i class="devicon-mongodb-plain-wordmark colored dev-icon"></i>
-        </div>
-      </div>
-      <form class="card contact-panel" id="contact-panel">
-        <h3 id="contact-me">Contact Me</h3>
-        <label class="input-title">Name</label>
-        <input type="text" class="text-input name" id="name" placeholder="" />
-        <label class="input-title">Email</label>
-        <input
-          type="text"
-          class="text-input email"
-          id="email"
-          placeholder="example@email.com"
-        />
-        <label class="input-title" for="description">Description</label>
-        <textarea
-          class="text-input description"
-          id="description"
-          placeholder="Let's build something together!"
-        ></textarea>
-        <button type="submit" class="submit" id="submit">Send</button>
-      </form>
-      <a
-        href="./Robert_Rosario_-_Software_Developer__Veteran.pdf"
-        download="Robert_Rosario_-_Software_Developer__Veteran.pdf"
-      >
-        <div class="card resume-panel">
-          <div class="label">Get My Resume</div>
-          <img
-            src="./download.svg"
-            aria-label="download"
-            class="download-icon"
-          />
-        </div>
-      </a>
-    </div>
-    <script src="./scripts.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
